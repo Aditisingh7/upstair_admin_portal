@@ -20,7 +20,7 @@ class _QuestionBankState extends State<QuestionBank> {
   }
 
   fetchquestionlist() async {
-    questionBank = await qc.fetchQuestiona();
+    questionBank = await qc.fetchQuestions();
     print(questionBank);
   }
 
@@ -512,13 +512,13 @@ class _QuestionBankState extends State<QuestionBank> {
                     //String jsonList = jsonEncode(options);
                     print("===============");
                     print(options);
-                    // await qc.uploadQuestion(
-                    //     subjectCntrl.text.toString(),
-                    //     questionCntrl.text.toString(),
-                    //     answerCntrl.text.toString(),
-                    //     options,
-                    //     topicCntrl.text.toString(),
-                    //     level.toString());
+                    await qc.uploadQuestion(
+                        subjectCntrl.text.toString(),
+                        questionCntrl.text.toString(),
+                        answerCntrl.text.toString(),
+                        options,
+                        topicCntrl.text.toString(),
+                        level.toLowerCase().toString());
                   },
                   child: Text('Upload'),
                 ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sat_exam/screens/admin.dart';
+import 'package:sat_exam/screens/question_bank/question_bank.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
         primaryIconTheme: IconThemeData(color: Colors.deepPurple),
       ),
-      home: AdminPage(),
+      home: QuestionBank(),
     );
   }
 }

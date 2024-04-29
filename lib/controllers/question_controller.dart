@@ -38,7 +38,7 @@ class QuestionBankController extends GetxController {
     return null; // Returning null in case of any other unexpected condition
   }
 
-  fetchQuestiona() async {
+  fetchQuestions() async {
     try {
       final response = await dio.get(apiValue.questionListUrl);
       if (response.statusCode == 200) {
