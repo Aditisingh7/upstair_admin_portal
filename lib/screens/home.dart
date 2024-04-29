@@ -144,7 +144,7 @@ class _HomeState extends State<Home> {
                               Row(
                                 children: [
                                   Text(
-                                    "Notification",
+                                    "Notification bell",
                                     style: GoogleFonts.workSans(
                                         fontSize: 22,
                                         fontWeight: FontWeight.w600),
